@@ -80,19 +80,19 @@ Download from Kaggle and place it in a `data/` folder or Google Drive before run
 
 1. Clone the repository
    
-   git clone https://github.com/<your-username>/fraud-detection-ml.git
-   cd fraud-detection-ml
+   git clone https://github.com/<your-username>/Fraud-Detection-ML.git
+   cd Fraud-Detection-ML
 
 2. Install dependencies
 
    pip install -r requirements.txt
    
-4. Download the dataset
+3. Download the dataset
 
    From Kaggle
    Place creditcard.csv inside a folder named data/ or mount Google Drive in Colab.
    
-5. Run the notebook
+4. Run the notebook
 
    jupyter notebook notebooks/Credit_Card_Fraud.ipynb
 
