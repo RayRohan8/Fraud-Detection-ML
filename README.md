@@ -79,22 +79,51 @@ Download from Kaggle and place it in a `data/` folder or Google Drive before run
 ## 🚀 How to Run
 
 1. Clone the repository
-   
+   ```
    git clone https://github.com/<your-username>/Fraud-Detection-ML.git
    cd Fraud-Detection-ML
+   ```
 
 2. Install dependencies
 
+   ```
    pip install -r requirements.txt
-   
+   ```
 3. Download the dataset
 
    From Kaggle
-   Place creditcard.csv inside a folder named data/ or mount Google Drive in Colab.
    
-4. Run the notebook
+   Place 'creditcard.csv' inside a folder named data/ or mount Google Drive in Colab.
+   
+5. Run the notebook
 
+   ```
    jupyter notebook notebooks/Credit_Card_Fraud.ipynb
+   ```
 
 
+## 📁 Project Structure
 
+```
+fraud-detection-ml/
+│
+├── data/                        ← dataset (not included)
+├── notebooks/
+│   └── Credit_Card_Fraud.ipynb
+├── models/
+│   ├── lightgbm_fraud_model.pkl
+│   └── scaler.pkl
+├── requirements.txt
+├── README.md
+```
+
+
+## 🧾 Key Learnings
+
+- Fraud detection requires combining many weak indicators into a strong decision boundary.
+
+- PR-AUC is a more meaningful metric than accuracy or ROC-AUC in imbalanced problems.
+
+- Threshold tuning is critical to balance business trade-offs.
+
+- LightGBM provides the best real-world trade-off for fraud detection in structured data.
